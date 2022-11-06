@@ -16,8 +16,10 @@ public class HomePage extends BasePage {
     }
 
     public void goPageEnd() {
+        waitForSecond(2000);
         ((JavascriptExecutor) driver)
                 .executeScript("window.scrollTo(0, document.body.scrollHeight)");
-        clickElement(By.className(lazyLoadText));
+        waitForSecond(2000);
+        clickElement(By.xpath(scroolProduct));
     }
 }

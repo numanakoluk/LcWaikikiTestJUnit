@@ -11,9 +11,7 @@ import static constants.Constants.*;
 
 public class ProductPage extends BasePage {
     public void selectProduct() {
-        Random rnd = new Random();
-        List<WebElement> products = findElements(By.className(productList));
-        int index = rnd.nextInt(products.size());
-        products.get(index).click();
+        List<WebElement> products = findElements(By.xpath(productList));
+        products.get(0).click();
     }
 }

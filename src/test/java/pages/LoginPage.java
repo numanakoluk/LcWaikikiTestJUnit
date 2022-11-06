@@ -23,11 +23,11 @@ public class LoginPage extends BasePage {
 
     public void beLogin(String userName, String password) {
         findElement(By.xpath(eMail)).sendKeys(userName);
-        waitForSecond(2000);
+        waitForSecond(1000);
         findElement(By.xpath(pass)).sendKeys(password);
-        waitForSecond(2000);
+        waitForSecond(1000);
         clickElement(By.xpath(loginButton));
-        waitForSecond(10000);
+        waitForSecond(3000);
 
 
 

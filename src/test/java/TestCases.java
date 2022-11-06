@@ -19,7 +19,7 @@ public class TestCases extends BaseTest {
         loginPage.close();
         loginPage.GoLogin();
         loginPage.beLogin("testautomationdeneme@gmail.com", "0018000Na");
-        homePage.searchProduct("Pantolon");
+        homePage.searchProduct("Parfüm");
         homePage.goPageEnd();
         productPage.selectProduct();
         basketPage.controlPrice();

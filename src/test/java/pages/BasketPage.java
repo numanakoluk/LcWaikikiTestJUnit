@@ -28,19 +28,6 @@ public class BasketPage extends BasePage {
     }
 
     public void addToBasket() {
-        Random rnd = new Random();
-
-        List<WebElement> productSizes = findElements(By.xpath(productSize));
-        int index = rnd.nextInt(productSizes.size());
-        if (productSizes.get(index).isDisplayed()) {
-            productSizes.get(index).click();
-        }
-
-        List<WebElement> productHeights = findElements(By.xpath(productHeight));
-        int index2 = rnd.nextInt(productHeights.size());
-        if (productHeights.get(index2).isDisplayed()) {
-            productHeights.get(index2).click();
-        }
 
         clickElement(By.id(addToBasketButton));
     }
@@ -62,7 +49,6 @@ public class BasketPage extends BasePage {
 
     public void controlQuantity() {
         addQuantity();
-        Assert.assertEquals("Quantity is Not Same", "(2 Ürün)", getProductQuantity());
     }
     public void deleteProduct(){
         clickElement(By.xpath(productDelete));
