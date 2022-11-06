@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.concurrent.TimeUnit;
 
@@ -17,14 +18,20 @@ import java.util.concurrent.TimeUnit;
     @Before
     public void Setup() {
         WebDriverManager.chromedriver().setup();
+        System.setProperty("webdriver.chrome.silentOutput", "true");
+        //W3S Info Close
+        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         ChromeOptions options = new ChromeOptions();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        //Notifications Close
+        options.addArguments("--incognito");
+        options.addArguments("--start-maximized");
+        options.addArguments("--ignore-certificate-errors");
         options.addArguments("--disable-notifications");
-        options.addArguments("disable-popup-blocking");
-        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
-        driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        options.addArguments("--acceptInsecureCerts");
+        options.addArguments("--disable-blink-features=AutomationControlled");
+        options.addArguments("chrome.switches","--disable-extensions");
+        options.merge(desiredCapabilities);
+        driver = new ChromeDriver(options);
         driver.navigate().to("https://www.lcwaikiki.com/tr-TR/TR");
 
     }

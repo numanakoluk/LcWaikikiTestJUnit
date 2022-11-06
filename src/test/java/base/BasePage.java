@@ -31,7 +31,13 @@ public class BasePage extends BaseTest {
     public void clearText(By by) {
         findElement(by).clear();
     }
-
+    public void waitForSecond(long millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
     public boolean isElementVisible(By by) {
         return findElement(by).isDisplayed();
 

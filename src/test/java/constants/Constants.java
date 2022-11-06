@@ -1,13 +1,14 @@
 package constants;
 
 public class Constants {
-    public static String headerLoginButton="(//a[@class='dropdown-toggle'])[1]";
-    public static String eMail="LoginEmail";
-    public static String pass="Password";
-    public static String loginButton="loginLink";
+    public static String headerLoginButton="(//a[@class='header-dropdown-toggle'])[1]";
+    public static String eMail="//*[@id=\"login\"]/div/div/div/div/form/div[2]/input";
+    public static String pass="//*[@id=\"login\"]/div/div/div/div/form/div[3]/div/input";
+    public static String loginButton="//*[@id=\"login\"]/div/div/div/div/form/button";
+
     public static String myAccount="//span[.='Hesabım']";
-    public static String searchInput="search_input";
-    public static String searchButton="searchButton";
+    public static String searchInput="search-form__input-field__search-input";
+    public static String searchButton="//*[@id=\"header__container\"]/header/div[2]/div[2]/form/div/div[2]/button";
     public static String lazyLoadText="lazy-load-text";
     public static String basket="//a[@class='header-cart']";
     public static String price="(//span[@class='price'])[2]";

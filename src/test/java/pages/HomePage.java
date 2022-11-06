@@ -12,7 +12,7 @@ public class HomePage extends BasePage {
     public void searchProduct(String searchData) {
         clearText(By.id(searchInput));
         findElement(By.id(searchInput)).sendKeys(searchData);
-        clickElement(By.className(searchButton));
+        clickElement(By.xpath(searchButton));
     }
 
     public void goPageEnd() {

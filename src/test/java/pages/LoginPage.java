@@ -10,7 +10,7 @@ import static constants.Constants.*;
 public class LoginPage extends BasePage {
 
     public void close(){
-        clickElement(By.xpath("//*[@id=\"close-button-1454703513202\"]/span"));
+        clickElement(By.xpath("//*[@id=\"cookieseal-banner\"]/div/button[2]"));
     }
 
     public void ControlPageLoad() {
@@ -22,9 +22,15 @@ public class LoginPage extends BasePage {
     }
 
     public void beLogin(String userName, String password) {
-        findElement(By.id(eMail)).sendKeys(userName);
-        findElement(By.id(pass)).sendKeys(password);
-        clickElement(By.id(loginButton));
+        findElement(By.xpath(eMail)).sendKeys(userName);
+        waitForSecond(2000);
+        findElement(By.xpath(pass)).sendKeys(password);
+        waitForSecond(2000);
+        clickElement(By.xpath(loginButton));
+        waitForSecond(10000);
+
+
+
 
     }
 }

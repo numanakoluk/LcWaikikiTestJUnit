@@ -18,7 +18,7 @@ public class TestCases extends BaseTest {
         loginPage.ControlPageLoad();
         loginPage.close();
         loginPage.GoLogin();
-        loginPage.beLogin("tuyluoglu.ramazan@gmail.com", "Test123.");
+        loginPage.beLogin("testautomationdeneme@gmail.com", "0018000Na");
         homePage.searchProduct("Pantolon");
         homePage.goPageEnd();
         productPage.selectProduct();
