@@ -20,7 +20,11 @@ public class Constants {
     public static String addQuantity=" //a[.='+']";
     public static String productQuantity="//input[contains(@value,'1')]";
     public static String productDelete="//div[@class='mobile-square-buttons-container']/a[@href='#']";
-    public static String emptyTitle=".cart-empty-title";
+
+    public static String deleteandAddFavori="//a[contains(text(),' Sil ve Favorilere Ekle')]";
+
+    public static String closeDeneyim="//*[@id=\"_hj_feedback_container\"]/div[1]/button";
+    public static String emptyTitle="//*[@id=\"ShoppingCartContent\"]/div[1]/div[1]/div/p[1]";
 
 
 

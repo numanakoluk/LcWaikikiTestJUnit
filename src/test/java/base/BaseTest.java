@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.Collections;
 import java.util.concurrent.TimeUnit;
 
 
@@ -30,6 +32,8 @@ import java.util.concurrent.TimeUnit;
         options.addArguments("--acceptInsecureCerts");
         options.addArguments("--disable-blink-features=AutomationControlled");
         options.addArguments("chrome.switches","--disable-extensions");
+        options.setExperimentalOption("useAutomationExtension", false);
+        options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         options.merge(desiredCapabilities);
         driver = new ChromeDriver(options);
         driver.navigate().to("https://www.lcwaikiki.com/tr-TR/TR");

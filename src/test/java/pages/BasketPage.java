@@ -3,6 +3,7 @@ package pages;
 import base.BasePage;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
@@ -52,7 +53,13 @@ public class BasketPage extends BasePage {
     }
     public void deleteProduct(){
         clickElement(By.xpath(productDelete));
-        String title=findElement(By.className(emptyTitle)).getText();
+        waitForSecond(10000);
+        JavascriptExecutor js1 = (JavascriptExecutor) driver;
+        WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Sil ve Favorilere Ekle')]"));
+        js1.executeScript("var elem=arguments[0]; setTimeout(function() {elem.click();}, 100)", element);
+        waitForSecond(3000);
+        waitForSecond(5000);
+        String title=findElement(By.xpath(emptyTitle)).getText();
         Assert.assertEquals("Basket is not Empty","Sepetinizde ürün bulunmamaktadır.",title);
     }
 }

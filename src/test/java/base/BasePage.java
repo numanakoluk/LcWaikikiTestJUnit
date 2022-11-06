@@ -24,6 +24,7 @@ public class BasePage extends BaseTest {
         findElements(by).get(index).click();
     }
 
+
     public void sendKeys(By by, String text) {
         findElement(by).sendKeys(text);
     }
