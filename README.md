@@ -1,29 +1,35 @@
-# LC Waikiki Test Automation
+<div align="center">
+ LCWaikikiWebTestProject
+</div>
 
+# **Selenium WEB** //Intelij //MVN//JUNIT//TESTNG 
+# AllSteps Amazon WithLogin Scenario 
+**Tags:chrome**
 
-### Test
+1. [+] **https://www.lcwaikiki.com/tr-TR/TR sitesi açılır.**
 
-🟢https://www.lcwaikiki.com/tr-TR/TR sitesi açılır.
+2. [+] **Çerezler Kabul Edilir.**
 
-🟢Ana sayfanın açıldığı kontrol edilir. Siteye login olunur.
+3. [+] **Ana sayfanın açıldığı kontrol edilir. Siteye login olunur.**
 
-🟢Login işlemi kontrol edilir.
+4. [+] **Login işlemi kontrol edilir.**
 
-🟢Arama kutucuğuna “pantolan” kelimesi girilir.
+5. [+] **Arama kutucuğuna “pantolan” kelimesi girilir.**
 
-🟢Sayfanın sonuna scroll edilir.
+6. [+] **Sayfanın sonuna scroll edilir.**
 
-🟢“Daha fazla ürün gör “ butonuna tıklanır.
+7. [+] **“Daha fazla ürün gör “ butonuna tıklanır.**
 
-🟢Sonuca göre sergilenen ürünlerden rastgele bir ürün seçilir.
+8. [+] **Sonuca göre sergilenen ürünlerden rastgele bir ürün seçilir.**
 
-🟢Seçilen ürün sepete eklenir.
+9. [+] **Seçilen ürün sepete eklenir.**
 
-🟢Ürün sayfasındaki fiyat ile sepette yer alan ürün fiyatının doğruluğu karşılaştırılır.
+10. [+] **Ürün sayfasındaki fiyat ile sepette yer alan ürün fiyatının doğruluğu karşılaştırılır.**
 
-🟢Adet arttırılarak ürün adedinin 2 olduğu doğrulanır.
+11. [+] **Adet arttırılarak ürün adedinin 2 olduğu doğrulanır.**
 
-🟢Ürün sepetten silinerek sepetin boş olduğu kontrol edilir.
+12. [+] **Ürün sepetten silinerek sepetin boş olduğu kontrol edilir.**
+
 
 
 
