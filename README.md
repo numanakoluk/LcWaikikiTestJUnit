@@ -14,13 +14,13 @@
 
 4. [+] **Login işlemi kontrol edilir.**
 
-5. [+] **Arama kutucuğuna “pantolan” kelimesi girilir.**
+5. [+] **Arama kutucuğuna “Parfüm” kelimesi girilir.**
 
 6. [+] **Sayfanın sonuna scroll edilir.**
 
 7. [+] **“Daha fazla ürün gör “ butonuna tıklanır.**
 
-8. [+] **Sonuca göre sergilenen ürünlerden rastgele bir ürün seçilir.**
+8. [+] **Sonuca göre sergilenen ürünlerden bir ürün seçilir.**
 
 9. [+] **Seçilen ürün sepete eklenir.**
 
@@ -28,7 +28,7 @@
 
 11. [+] **Adet arttırılarak ürün adedinin 2 olduğu doğrulanır.**
 
-12. [+] **Ürün sepetten silinerek sepetin boş olduğu kontrol edilir.**
+12. [+] **Ürün sepetten silinerek ve favorilere eklenerin sepetin boş olduğu kontrol edilir.**
 
 
 
